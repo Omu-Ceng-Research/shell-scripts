@@ -1,0 +1,5 @@
+2025-11-27 10:00:01 INFO servis başladı
+2025-11-27 10:00:05 warning disk %85 dolu
+2025-11-27 10:01:12 error veritabanına bağlanılamadı
+2025-11-27 10:02:00 INFO istek işlendi
+2025-11-27 10:03:44 error zaman aşımı

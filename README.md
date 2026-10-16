@@ -1,0 +1,99 @@
+# Shell Scripts — Sistem Programlama
+
+Ondokuz Mayıs Üniversitesi Bilgisayar Mühendisliği **Sistem Programlama** dersinin shell uygulama örnekleri.
+
+Derste gördüğümüz her komut burada çalıştırılabilir bir script olarak yer alıyor. Scriptleri okuyun, çalıştırın, değiştirin ve çıktının neden öyle olduğunu anlamaya çalışın. Dersin ana sayfası: <https://ismailhakkituran.github.io/systemprogramming.html>
+
+---
+
+## Gereksinimler
+
+- Linux, WSL (Ubuntu) ya da macOS gibi UNIX benzeri bir sistem
+- `bash` ve şu araçlar: `bc`, `ps`, `top`, `find`, `grep`, `awk`, `cut`, `lsusb`, `lsblk`, `last`
+
+Ubuntu/WSL üzerinde eksik araçları şöyle kurabilirsiniz:
+
+```bash
+sudo apt install bc usbutils procps
+```
+
+## Başlarken
+
+```bash
+git clone https://github.com/Omu-Ceng-Research/shell-scripts.git
+cd shell-scripts
+
+# Tek bir script çalıştırmak
+bash hafta-01/01_degiskenler.sh
+
+# Bir haftanın tüm scriptlerini sırayla çalıştırmak
+./hepsini_calistir.sh hafta-01
+
+# Tüm haftaları sırayla çalıştırmak
+./hepsini_calistir.sh
+```
+
+> **İpucu:** Çalıştırmadan önce scripti açıp okuyun (`cat hafta-01/08_grep_regex.sh`). Sonra bir satırı değiştirip tekrar çalıştırın; en iyi bu şekilde öğrenirsiniz.
+
+## Klasör Yapısı
+
+```
+shell-scripts/
+├── hafta-01/            # 1. uygulama: değişkenler, döngüler, find, grep, regex
+├── hafta-02/            # 2. uygulama: job kontrolü, aygıtlar, disk, RAM, last, quiz
+├── ornek-veri/          # grep/regex örneklerinin kullandığı örnek dosyalar
+└── hepsini_calistir.sh  # haftaların scriptlerini sırayla çalıştırır
+```
+
+Yeni haftalar `hafta-03/`, `hafta-04/` … klasörleri olarak eklenecek.
+
+---
+
+## Hafta 1 — Temeller, find, grep ve Regex
+
+Ders notu: [system-app-27-11-2025.md](https://github.com/ismailhakkituran/ismailhakkituran.github.io/blob/main/system-programming/system-app-27-11-2025.md)
+
+| Script | Konu |
+| --- | --- |
+| `01_degiskenler.sh` | Değişken tanımlama (`=` etrafında boşluk olmaz) |
+| `02_matematik.sh` | `$(( ))`, `expr` ve `bc` ile ondalıklı işlem |
+| `03_if_else.sh` | `if / elif / else` ve karşılaştırma operatörleri (`-gt`, `-eq` …) |
+| `04_while.sh` | `while` döngüsü |
+| `05_for.sh` | Liste üzerinde, C tarzı ve dosyalar üzerinde `for` döngüsü |
+| `06_find.sh` | `find`: ada, tarihe ve boyuta göre arama; `-delete` |
+| `07_cut_awk_cpu.sh` | `cut`, `awk`; en çok CPU kullanan 3 prosesi bulma (`ps`, `top`) |
+| `08_grep_regex.sh` | `grep` ile temel regex, `-E` (extended) ve `-P` (Perl) regex |
+| `09_wildcard_vs_regex.sh` | Shell wildcard'ları (`*`, `?`, `[]`) ile regex'in farkı |
+| `10_grep_pratik.sh` | URL, IPv4 adresi ve yorum satırı yakalama |
+| `11_backtick_aritmetik.sh` | `` `komut` ``, `$( )` ve `$(( ))` karşılaştırması |
+
+## Hafta 2 — Job Kontrolü ve Sistem Bilgisi
+
+Ders notu: [system-app-04-12-2025.md](https://github.com/ismailhakkituran/ismailhakkituran.github.io/blob/main/system-programming/system-app-04-12-2025.md)
+
+| Script | Konu |
+| --- | --- |
+| `01_ardisik_kosullu.sh` | `;`, `&&` ve `\|\|` ile komut zincirleme |
+| `02_job_kontrol.sh` | `&`, `jobs`, Ctrl+Z, `bg`, `fg` |
+| `03_recursive.sh` | `$0` ile kendini çağıran script |
+| `04_terminal.sh` | Terminal aygıtları: `/dev/tty*`, `/dev/pts`, `tty` |
+| `05_usb.sh` | USB aygıtları: `lsusb`, `dmesg` |
+| `06_disk.sh` | Disk ve bölümler: `df -h`, `lsblk` |
+| `07_ram.sh` | Bellek: `free`, `/proc/meminfo`, `ps --sort=-%mem`, `ls` seçenekleri |
+| `08_last.sh` | Giriş ve reboot geçmişi: `last` |
+| `09_quiz_cozumleri.sh` | Quiz çalışma sorularına önerilen çözümler |
+
+> **Quiz'e hazırlanırken:** `09_quiz_cozumleri.sh` dosyasına bakmadan önce soruları kendiniz çözmeyi deneyin. Sorular ders notunun sonunda yer alıyor.
+
+---
+
+## Bilmeniz Gerekenler
+
+- **Çıktılar her çalıştırmada farklı olabilir.** `ps`, `top` ve `free` sistemin o anki durumunu gösterir.
+- **Bazı komutlar yetki ister.** Örneğin `dmesg` normal kullanıcıyla çalışmayabilir; o durumda `sudo dmesg | tail -n 20` deneyin.
+- **WSL'de bazı komutlar boş dönebilir.** `lsusb`, `last` ve `/dev/tty*` sanal ortamda gerçek donanımı göstermeyebilir.
+- **Scriptler sisteminizi değiştirmez.** Dosya oluşturan ya da silen örnekler (`find -delete`, `mkdir`, `cat > whole.txt`) yalnızca geçici bir klasörde (`mktemp -d`) çalışır.
+
+## Sorular
+
+Sorularınızı ders saatinde ya da [ders sayfasındaki](https://ismailhakkituran.github.io/systemprogramming.html) iletişim kanallarından sorabilirsiniz.

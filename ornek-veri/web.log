@@ -1,0 +1,5 @@
+192.168.1.10 GET https://example.com/index.html 200
+10.0.0.5 GET http://example.com/login 302
+85.105.12.7 POST https://api.example.com/v1/data 201
+192.168.1.11 GET https://example.com/style.css 200
+172.16.0.3 GET http://intranet.local/home 200

@@ -1,0 +1,5 @@
+Merhaba
+dunya123
+Linux
+shell script
+Bash

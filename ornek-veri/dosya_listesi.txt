@@ -1,0 +1,7 @@
+file1.txt
+file22.txt
+filex.txt
+zebra.txt
+zoom.log
+notes.md
+file3.csv
