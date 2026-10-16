@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/terminal.svg" width="96" alt="Terminal ikonu">
+</p>
+
 # Shell Scripts — Sistem Programlama
 
 Ondokuz Mayıs Üniversitesi Bilgisayar Mühendisliği **Sistem Programlama** dersinin shell uygulama örnekleri.
