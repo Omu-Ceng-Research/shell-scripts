@@ -3,12 +3,15 @@
 
 echo "--- $HOME altındaki .txt dosyaları (ilk 10) ---"
 find "$HOME" -type f -name "*.txt" 2>/dev/null | head -n 10
+find "$HOME" -type f -name "*.txt" 2>/dev/null | wc -l
 
 echo "--- /var/log altında son 7 günde değişen .log dosyaları ---"
 find /var/log -type f -name "*.log" -mtime -7 2>/dev/null
+find /var/log -type f -name "*.log" -mtime -7 2>/dev/null | wc -l
 
 echo "--- /home altında 10MB üzeri dosyalar (ilk 10) ---"
 find /home -type f -size +10M 2>/dev/null | head -n 10
+find /home -type f -size +10M 2>/dev/null | wc -l
 
 echo "--- Bulunan dosyaları silme (-delete) ---"
 # Orijinal örnek: find /tmp -type f -name "*.tmp" -delete
