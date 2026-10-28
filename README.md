@@ -8,6 +8,8 @@ Ondokuz Mayıs Üniversitesi Bilgisayar Mühendisliği **Sistem Programlama** de
 
 Derste gördüğümüz her komut burada çalıştırılabilir bir script olarak yer alıyor. Scriptleri okuyunuz, çalıştırınız, değiştiriniz ve çıktının neden öyle olduğunu anlamaya çalışınız. Dersin ana sayfası: <https://ismailhakkituran.github.io/systemprogramming.html>
 
+> **Quiz 1:** Çalışma konuları ve komut listesi için [Quiz-1.md](Quiz-1.md) dosyasına bakınız.
+
 ---
 
 ## Gereksinimler
