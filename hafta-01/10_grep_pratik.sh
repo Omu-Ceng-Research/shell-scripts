@@ -11,5 +11,5 @@ grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}" network.log
 echo '--- # ile başlayan satırlar ---'
 grep "^#" script.sh
 
-echo '--- awk regex ile en çok CPU kullanan 3 proses (PID %CPU) ---'
-ps aux | awk '$3 ~ /^[0-9.]+$/ {print $2,$3}' | sort -k2 -nr | head -n3
+echo '--- cut + grep regex ile en çok CPU kullanan 3 proses (PID %CPU) ---'
+ps aux | cut -c10-21 | grep -E ' [0-9.]+$' | sort -k2 -nr | head -n3

@@ -13,7 +13,7 @@ Derste gördüğümüz her komut burada çalıştırılabilir bir script olarak 
 ## Gereksinimler
 
 - Linux, WSL (Ubuntu) ya da macOS gibi UNIX benzeri bir sistem
-- `bash` ve şu araçlar: `bc`, `ps`, `top`, `find`, `grep`, `awk`, `cut`, `lsusb`, `lsblk`, `last`
+- `bash` ve şu araçlar: `bc`, `ps`, `top`, `find`, `grep`, `cut`, `awk`, `lsusb`, `lsblk`, `last`
 
 Ubuntu/WSL üzerinde eksik araçları şöyle kurabilirsiniz:
 
@@ -83,7 +83,7 @@ Ders notu: [system-app-27-11-2025.md](https://github.com/ismailhakkituran/ismail
 | `04_while.sh` | `while` döngüsü |
 | `05_for.sh` | Liste üzerinde, C tarzı ve dosyalar üzerinde `for` döngüsü |
 | `06_find.sh` | `find`: ada, tarihe ve boyuta göre arama; `-delete` |
-| `07_cut_awk_cpu.sh` | `cut`, `awk`; en çok CPU kullanan 3 prosesi bulma (`ps`, `top`) |
+| `07_cut_cpu.sh` | `cut` ile sütun kesme (`-d` ayraçla, `-c` karakter konumuyla); en çok CPU ve RAM kullanan prosesleri bulma (`ps`, `top` snapshot) |
 | `08_grep_regex.sh` | `grep` ile temel regex, `-E` (extended) ve `-P` (Perl) regex |
 | `09_wildcard_vs_regex.sh` | Shell wildcard'ları (`*`, `?`, `[]`) ile regex'in farkı |
 | `10_grep_pratik.sh` | URL, IPv4 adresi ve yorum satırı yakalama |
