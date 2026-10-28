@@ -6,7 +6,7 @@
 
 Ondokuz Mayıs Üniversitesi Bilgisayar Mühendisliği **Sistem Programlama** dersinin shell uygulama örnekleri.
 
-Derste gördüğümüz her komut burada çalıştırılabilir bir script olarak yer alıyor. Scriptleri okuyun, çalıştırın, değiştirin ve çıktının neden öyle olduğunu anlamaya çalışın. Dersin ana sayfası: <https://ismailhakkituran.github.io/systemprogramming.html>
+Derste gördüğümüz her komut burada çalıştırılabilir bir script olarak yer alıyor. Scriptleri okuyunuz, çalıştırınız, değiştiriniz ve çıktının neden öyle olduğunu anlamaya çalışınız. Dersin ana sayfası: <https://ismailhakkituran.github.io/systemprogramming.html>
 
 ---
 
@@ -37,7 +37,7 @@ bash hafta-01/01_degiskenler.sh
 ./hepsini_calistir.sh
 ```
 
-> **İpucu:** Çalıştırmadan önce scripti açıp okuyun (`cat hafta-01/08_grep_regex.sh`). Sonra bir satırı değiştirip tekrar çalıştırın; en iyi bu şekilde öğrenirsiniz.
+> **İpucu:** Çalıştırmadan önce scripti açıp okuyunuz (`cat hafta-01/08_grep_regex.sh`). Sonra bir satırı değiştirip tekrar çalıştırınız; en iyi bu şekilde öğrenebilirsiniz.
 
 ## Klasör Yapısı
 
@@ -87,14 +87,14 @@ Ders notu: [system-app-04-12-2025.md](https://github.com/ismailhakkituran/ismail
 | `08_last.sh` | Giriş ve reboot geçmişi: `last` |
 | `09_quiz_cozumleri.sh` | Quiz çalışma sorularına önerilen çözümler |
 
-> **Quiz'e hazırlanırken:** `09_quiz_cozumleri.sh` dosyasına bakmadan önce soruları kendiniz çözmeyi deneyin. Sorular ders notunun sonunda yer alıyor.
+> **Quiz'e hazırlanırken:** `09_quiz_cozumleri.sh` dosyasına bakmadan önce soruları kendiniz çözmeyi deneyiniz. Sorular ders notunun sonunda yer alıyor.
 
 ---
 
 ## Bilmeniz Gerekenler
 
 - **Çıktılar her çalıştırmada farklı olabilir.** `ps`, `top` ve `free` sistemin o anki durumunu gösterir.
-- **Bazı komutlar yetki ister.** Örneğin `dmesg` normal kullanıcıyla çalışmayabilir; o durumda `sudo dmesg | tail -n 20` deneyin.
+- **Bazı komutlar yetki ister.** Örneğin `dmesg` normal kullanıcıyla çalışmayabilir; o durumda `sudo dmesg | tail -n 20` komutunu deneyebilirsiniz.
 - **WSL'de bazı komutlar boş dönebilir.** `lsusb`, `last` ve `/dev/tty*` sanal ortamda gerçek donanımı göstermeyebilir.
 - **Scriptler sisteminizi değiştirmez.** Dosya oluşturan ya da silen örnekler (`find -delete`, `mkdir`, `cat > whole.txt`) yalnızca geçici bir klasörde (`mktemp -d`) çalışır.
 
