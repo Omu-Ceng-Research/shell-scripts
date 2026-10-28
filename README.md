@@ -95,7 +95,7 @@ Ders notu: [system-app-04-12-2025.md](https://github.com/ismailhakkituran/ismail
 
 | Script | Konu |
 | --- | --- |
-| `01_ardisik_kosullu.sh` | `;`, `&&` ve `\|\|` ile komut zincirleme |
+| `01_ardisik_kosullu.sh` | `;`, `&&` ve `\|\|` ile komut zincirleme; `&`, `wait` ve `$!` ile paralel çalıştırma |
 | `02_job_kontrol.sh` | `&`, `jobs`, Ctrl+Z, `bg`, `fg` |
 | `03_recursive.sh` | `$0` ile kendini çağıran script |
 | `04_terminal.sh` | Terminal aygıtları: `/dev/tty*`, `/dev/pts`, `tty` |
