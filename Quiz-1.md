@@ -18,7 +18,7 @@ Quiz 1'e aşağıdaki scriptler üzerinden hazırlanabilirsiniz. Her scripti aç
 10. [`hafta-01/10_grep_pratik.sh`](hafta-01/10_grep_pratik.sh) — `grep` ile pratik örnekler
 11. [`hafta-01/11_backtick_aritmetik.sh`](hafta-01/11_backtick_aritmetik.sh) — `` `komut` ``, `$( )` ve `$(( ))`
 
-### Hafta 2
+### Hafta 2'den Ödev
 
 1. [`hafta-02/01_ardisik_kosullu.sh`](hafta-02/01_ardisik_kosullu.sh) — `;`, `&&`, `||` ile komut zincirleme; `&`, `wait` ve `$!` ile paralel çalıştırma *(Uygulamada işlenmedi, ödev olarak kendiniz halletmeniz beklenmektedir.)*
 2. [`hafta-02/03_recursive.sh`](hafta-02/03_recursive.sh) — `$0` ile kendini çağıran script *(Uygulamada işlenmedi, ödev olarak kendiniz halletmeniz beklenmektedir.)*
