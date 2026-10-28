@@ -37,6 +37,24 @@ bash hafta-01/01_degiskenler.sh
 ./hepsini_calistir.sh
 ```
 
+Her haftanın klasörüne girip scriptleri tek tek de çalıştırabilirsiniz. Bunun iki yolu vardır: `./` ile scripti doğrudan çalıştırmak ya da `bash` komutuna vermek.
+
+```bash
+# 1. hafta
+cd hafta-01
+./01_degiskenler.sh      # ./ ile doğrudan çalıştırma
+bash 02_matematik.sh     # bash ile çalıştırma
+cd ..
+
+# 2. hafta
+cd hafta-02
+./03_recursive.sh 1      # script argüman alıyorsa adının arkasına yazılır
+bash 06_disk.sh
+cd ..
+```
+
+> **Not:** `./` ile çalıştırmak için dosyanın çalıştırma izni olmalıdır. Repoyu ZIP olarak indirdiyseniz bu izin kaybolabilir ve `Permission denied` hatası alabilirsiniz. Bu durumda klasörün içinde `chmod +x *.sh` komutunu çalıştırınız ya da scripti `bash` ile çalıştırınız; `bash` ile çalıştırmak bu izni gerektirmez.
+
 > **İpucu:** Çalıştırmadan önce scripti açıp okuyunuz (`cat hafta-01/08_grep_regex.sh`). Sonra bir satırı değiştirip tekrar çalıştırınız; en iyi bu şekilde öğrenebilirsiniz.
 
 ## Klasör Yapısı
